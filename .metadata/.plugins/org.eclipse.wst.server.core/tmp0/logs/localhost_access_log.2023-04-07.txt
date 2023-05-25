@@ -1,0 +1,415 @@
+127.0.0.1 - - [07/Apr/2023:02:29:04 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:05 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:05 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:05 +0200] "GET /favicon.ico HTTP/1.1" 404 692
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:11 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:11 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13241
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:11 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:11 +0200] "GET /test/ImageProfileServlet HTTP/1.1" 200 91093
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:11 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:11 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:33 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:33 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:33 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:33 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:46 +0200] "GET /test/ContactsServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:46 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:46 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:57 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:57 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13026
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:57 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:57 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:29:57 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:30:02 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 18841
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:30:03 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:30:09 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18839
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:30:09 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:31:20 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 18686
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:31:20 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:31:27 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18563
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:31:27 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:33:42 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13026
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:33:42 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:33:42 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:33:42 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+127.0.0.1 - - [07/Apr/2023:02:35:00 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:01 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:01 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:01 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:01 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:05 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:05 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13241
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:05 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:05 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:05 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:18 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:18 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:25 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:25 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13026
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:25 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:25 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:25 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:29 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 18686
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:35:29 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:39:39 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 18686
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:39:40 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:39:47 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18563
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:39:47 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:11 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:11 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:17 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:17 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:17 +0200] "GET /favicon.ico HTTP/1.1" 404 692
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:39 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:39 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13241
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:39 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:39 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:39 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:46 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:46 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13137
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:46 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:46 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:46 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:41:46 +0200] "GET /test/ImageProfileServlet HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:04 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:04 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:04 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13350
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:04 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:04 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:04 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:07 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:07 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:07 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18685
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:07 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:09 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:09 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:09 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 18565
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:42:10 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+127.0.0.1 - - [07/Apr/2023:02:54:28 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:28 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:29 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:34 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:34 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:38 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:38 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13241
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:38 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:38 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:38 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:51 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:51 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13137
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:51 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:51 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:51 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:53 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 18565
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:53 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:55 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18564
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:54:55 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+127.0.0.1 - - [07/Apr/2023:02:55:52 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:55:53 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:55:53 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:55:58 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:55:58 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:03 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:03 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13026
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:03 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:03 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:03 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:04 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 18565
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:04 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:09 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:09 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13350
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:09 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:09 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:09 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:10 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18564
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:56:11 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:59:22 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13350
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:59:22 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:59:22 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:02:59:22 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+127.0.0.1 - - [07/Apr/2023:05:11:37 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:11:38 +0200] "GET /test/WEB-INF/chat.jsp HTTP/1.1" 404 604
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:01 +0200] "GET /test/ContactsServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:01 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:01 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:09 +0200] "GET /test/ContactsServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:09 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:10 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:12 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:12 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:17 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:22 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:40 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:41 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13218
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:41 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:41 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:42 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:12:42 +0200] "GET //BackgroundServlet HTTP/1.1" 404 703
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:07 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13194
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:08 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:08 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:08 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:14 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:14 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:14 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:14 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:23 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:23 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:23 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:23 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:27 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:27 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:27 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:27 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+127.0.0.1 - - [07/Apr/2023:05:13:42 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:44 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:44 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:44 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:44 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:13:44 +0200] "GET /test/BackgroundServlet HTTP/1.1" 200 281023
+127.0.0.1 - - [07/Apr/2023:05:16:37 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:16:38 +0200] "GET /test/WEB-INF/contacts.jsp HTTP/1.1" 404 604
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:16:45 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:16:46 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:16:46 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:16:46 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:16:52 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18655
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:16:53 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:16:58 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:16:59 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:17:06 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:17:06 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 12980
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:17:06 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:17:06 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:17:06 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:17:06 +0200] "GET /test/BackgroundServlet HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:17:18 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:17:18 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:17:18 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 18656
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:17:18 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:00 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13304
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:00 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:00 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:00 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:08 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 12980
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:08 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:08 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:08 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:12 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 12980
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:12 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:12 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:12 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:18 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 18656
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:18 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:25 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 12980
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:25 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:25 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:25 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:37 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:37 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:42 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:42 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 12980
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:42 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:42 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:42 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:49 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13304
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:49 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:49 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:18:49 +0200] "-" 400 1905
+127.0.0.1 - - [07/Apr/2023:05:20:09 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:20:10 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:20:11 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:20:39 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:20:39 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:20:39 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:20:39 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:20:39 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:20:53 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:20:54 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:20:54 +0200] "GET /favicon.ico HTTP/1.1" 404 692
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:00 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:00 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13091
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:00 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:00 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:00 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:05 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 18655
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:05 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:07 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13304
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:07 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:07 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:07 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:10 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18654
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:10 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:38 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:51 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13304
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:51 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:51 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:51 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:58 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18773
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:21:58 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:07 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13304
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:07 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:07 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:07 +0200] "-" 400 1905
+127.0.0.1 - - [07/Apr/2023:05:23:33 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:34 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:34 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:45 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:45 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:46 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:46 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:46 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:47 +0200] "GET /test/chat?withClientId=simo@gmail.com HTTP/1.1" 200 18650
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:23:48 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:26:09 +0200] "GET /test/chat?withClientId=simo@gmail.com HTTP/1.1" 200 18725
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:26:11 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:26:26 +0200] "GET /test/chat?withClientId=simo@gmail.com HTTP/1.1" 200 18725
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:26:28 +0200] "GET /test/chat?withClientId=simo@gmail.com HTTP/1.1" 200 18725
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:26:29 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:26:30 +0200] "GET /test/chat?withClientId=simo@gmail.com HTTP/1.1" 200 18725
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:26:31 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:26:38 +0200] "GET /test/chat?withClientId=simo@gmail.com HTTP/1.1" 200 18574
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:26:39 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:08 +0200] "GET /test/chat?withClientId=simo@gmail.com HTTP/1.1" 200 18627
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:08 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:10 +0200] "GET /test/chat?withClientId=simo@gmail.com HTTP/1.1" 200 18627
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:10 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+127.0.0.1 - - [07/Apr/2023:05:29:20 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:21 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:21 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:25 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:25 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:25 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:25 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:25 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:28 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18756
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:28 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:52 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18631
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:53 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:55 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 18631
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:29:56 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:32:04 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 20954
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:32:04 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:32:57 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21032
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:33:00 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:33:22 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 20986
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:33:22 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:33:33 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 20986
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:33:33 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:34:41 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 20986
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:34:41 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:34:49 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21056
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:34:49 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:03 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21056
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:03 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:08 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:09 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:16 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21058
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:16 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:27 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:27 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:28 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:28 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:29 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:30 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:30 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:30 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:35 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:35 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:45 +0200] "GET /test/Profile HTTP/1.1" 200 4892
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:45 +0200] "GET /ressources/css/styleProfil.css HTTP/1.1" 404 719
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:48 +0200] "GET /test/editerProfil HTTP/1.1" 200 6894
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:48 +0200] "GET /ressources/css/styleEditer.css HTTP/1.1" 404 719
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:53 +0200] "POST /test/editerProfil HTTP/1.1" 200 6896
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:53 +0200] "GET /ressources/css/styleEditer.css HTTP/1.1" 404 719
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:58 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:58 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:58 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:35:58 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:03 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21058
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:03 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:12 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 21059
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:12 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:26 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:26 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:28 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:28 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:28 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:28 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:30 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:30 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:35 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:35 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:36 +0200] "GET /test/Profile HTTP/1.1" 200 4893
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:36 +0200] "GET /ressources/css/styleProfil.css HTTP/1.1" 404 719
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:37 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:38 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:38 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:38 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:40 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:40 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:45 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 21058
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:45 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:48 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13091
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:48 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:48 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:48 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:49 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 21058
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:36:49 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:06 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:06 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:06 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:06 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:11 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:11 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:11 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:11 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:15 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13091
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:15 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:15 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:37:15 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+127.0.0.1 - - [07/Apr/2023:05:38:03 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:04 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:04 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:09 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:09 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:09 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:09 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:09 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:12 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:12 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:17 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:17 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:17 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:17 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:26 +0200] "GET /test/Profile HTTP/1.1" 200 4893
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:26 +0200] "GET /ressources/css/styleProfil.css HTTP/1.1" 404 719
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:29 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:30 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:30 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:05:38:30 +0200] "-" 400 1905
+127.0.0.1 - - [07/Apr/2023:13:01:04 +0200] "GET / HTTP/1.1" 404 681
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:05 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:05 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:05 +0200] "GET /favicon.ico HTTP/1.1" 404 692
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:13 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:13 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13195
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:13 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:13 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:13 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:17 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:18 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:21 +0200] "GET /test/SignIn HTTP/1.1" 200 11785
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:21 +0200] "GET /test/resources/css/login.css HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:21 +0200] "GET /favicon.ico HTTP/1.1" 404 692
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:26 +0200] "POST /test/SignIn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:26 +0200] "GET /test/ContactsServlet HTTP/1.1" 200 13091
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:26 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:26 +0200] "GET /test/javascript/users.js HTTP/1.1" 404 713
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:26 +0200] "-" 400 1905
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:27 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 21058
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:01:28 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:02:36 +0200] "GET /test/chat?withClientId=jaafar@gmail.com HTTP/1.1" 200 21057
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:02:36 +0200] "GET /test/chatroom/mohamed@gmail.com HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:02:41 +0200] "GET /test/chat?withClientId=mohamed@gmail.com HTTP/1.1" 200 21058
+0:0:0:0:0:0:0:1 - - [07/Apr/2023:13:02:41 +0200] "GET /test/chatroom/jaafar@gmail.com HTTP/1.1" 101 -

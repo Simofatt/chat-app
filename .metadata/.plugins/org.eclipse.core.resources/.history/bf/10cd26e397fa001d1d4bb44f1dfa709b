@@ -1,0 +1,22 @@
+package comm.octest.security;
+
+import java.security.Key;
+import java.security.KeyPair;
+import java.security.PublicKey;
+
+public class MessageAndKey {
+	public Byte[] encryptedMessage;
+	public PublicKey publicKey;
+	
+	
+	public MessageAndKey(Byte[] encryptedMessage, PublicKey publicKey) {
+		this.encryptedMessage = encryptedMessage;
+		this.publicKey = publicKey;
+	}
+
+
+
+	
+	
+}
+

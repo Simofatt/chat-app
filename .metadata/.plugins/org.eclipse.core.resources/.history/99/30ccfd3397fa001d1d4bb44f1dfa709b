@@ -1,0 +1,8 @@
+package comm.octest.security;
+
+import java.security.KeyPair;
+
+public class MessageAndKey {
+	public String encryptedMessage;
+	public KeyPair senderKeyPair ; 
+}

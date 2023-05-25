@@ -1,0 +1,12 @@
+1678214098535	Rename resource 'Web.xml'
+1678454665522	Move 'Client.js' to 'WEB-INF'
+1678454838785	Move 'Client.js' to 'public'
+1678454908835	Move 'public' to 'test'
+1678467070496	Copy compilation unit
+1678467077573	Delete element
+1678467883338	Delete element
+1678469375207	Delete element
+1678477669916	Delete element
+1678479748109	Copy file
+1678479842887	Delete element
+1678639068916	Move 'login.jsp' to 'WEB-INF'

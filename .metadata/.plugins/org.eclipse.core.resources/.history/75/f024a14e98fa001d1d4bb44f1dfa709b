@@ -1,0 +1,68 @@
+package comm.octest.security;
+
+import java.io.IOException;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.NoSuchAlgorithmException;
+
+import javax.crypto.Cipher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.google.gson.Gson;
+
+/**
+ * Servlet implementation class CryptMessage
+ */
+@WebServlet("/CryptMessage")
+public class CryptMessage extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public CryptMessage() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+        KeyPairGenerator keyPairGenerator;
+		try {
+			String message = request.getParameter("message");
+			keyPairGenerator = KeyPairGenerator.getInstance("RSA");
+			keyPairGenerator.initialize(2048); // Taille de clé recommandée pour RSA
+		    KeyPair senderKeyPair = keyPairGenerator.generateKeyPair();
+		    // Chiffrer le message avec la clé privée de l'expéditeur
+	        Cipher cipher = Cipher.getInstance("RSA");
+	        cipher.init(Cipher.ENCRYPT_MODE, senderKeyPair.getPrivate());    
+	        byte[] encryptedMessage = cipher.doFinal(message.getBytes());
+	        Gson gson = new Gson();
+	        MessageAndKey msgAndKey = new MessageAndKey(encryptedMessage,senderKeyPair.getPublic());
+		        
+		        
+		        
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+       
+        
+	}
+
+}
