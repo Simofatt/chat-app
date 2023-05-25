@@ -75,7 +75,7 @@
         })
 
         btnSend.addEventListener("click", function (clickEvent) {
-        	console.log("hazhzhzhzhzhhzhz");
+    
         	 $.ajax({
                  url: "CryptMessage",
                  type: "POST",
@@ -88,6 +88,7 @@
                 	 console.log("json : " + dataJson);
                      encryptedMessage = dataJson.encryptedMessage;
                      publicKey = dataJson.publicKey;
+                     signature = dataJson.signature;
                      // Do something with the treated variable
                      console.log(encryptedMessage + " Key : " + publicKey);
                      let message = {
@@ -95,6 +96,7 @@
                              from : pseudo,
                              message: encryptedMessage,
                              publicKey: publicKey,
+                             signature : signature
                             
                          };
                    if (fileInput.files.length > 0) {

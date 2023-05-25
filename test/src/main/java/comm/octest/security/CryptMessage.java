@@ -43,6 +43,11 @@ public class CryptMessage extends HttpServlet {
             cipher.init(Cipher.ENCRYPT_MODE, senderKeyPair.getPrivate());    
             byte[] encryptedMessage = cipher.doFinal(message.getBytes());
             
+            
+            SignatureClass signatureClass = new SignatureClass() ;
+           
+            
+            
             ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
             ObjectOutputStream objectOut = new ObjectOutputStream(byteOut);
             objectOut.writeObject(senderKeyPair.getPublic());
@@ -52,7 +57,8 @@ public class CryptMessage extends HttpServlet {
             String encryptedMessageString = Base64.getEncoder().encodeToString(encryptedMessage);
             
             Gson gson = new Gson();
-            MessageAndKey msgAndKey = new MessageAndKey(encryptedMessageString, publicKeyString);
+            String signature = signatureClass.sign(encryptedMessageString, senderKeyPair.getPrivate());
+            MessageAndKey msgAndKey = new MessageAndKey(encryptedMessageString, publicKeyString,signature);
             String json = gson.toJson(msgAndKey);
             
             response.getWriter().write(json);

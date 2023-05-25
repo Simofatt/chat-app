@@ -97,6 +97,10 @@ public class ChatRoom {
    public void handleMessage(String msg, Session session, @PathParam("pseudo") String pseudo, @PathParam("withClientId") String withClientId) throws IOException, Exception {
        JsonObject json = Json.createReader(new StringReader(msg)).readObject();
        String to = json.getString("to");
+       String from = json.getString("from");
+       String publicKey = json.getString("publicKey");
+       String signature = json.getString("signature") ;
+
        AtomicBoolean isConnected = new AtomicBoolean(false);
        int x =0;
        sessions.forEach((key,value) -> {
@@ -140,10 +144,11 @@ public class ChatRoom {
                    messages_list.add(new Message(expediteur,to,fullMessage,"file"));
                }
                else {
-            	  SecretKeySpec key = new SecretKeySpec("MaCleChiffrement".getBytes(), "AES");
+            	  /*SecretKeySpec key = new SecretKeySpec("MaCleChiffrement".getBytes(), "AES");
            		Hash hash = new Hash() ;
-           		byte[] messageChiffre = hash.chiffrementAES(fullMessage, key);
-                   sendMessage(messageChiffre, expediteur, to);
+           		byte[] messageChiffre = hash.chiffrementAES(fullMessage, key);*/
+           	// System.out.println(" $$$$$$$$$$$$$ " + messageChiffre);
+                   sendMessage(fullMessage, expediteur, to, publicKey);
                    messages_list.add(new Message(expediteur,to,fullMessage,"text"));
                }
        }
@@ -152,7 +157,7 @@ public class ChatRoom {
 
 
 
-   private void sendMessage(byte[] message, String expediteur, String destinataire) {
+   private void sendMessage(String message, String expediteur, String destinataire, String publicKey) {
        System.out.println(expediteur + " >>> " + message);
      
    
@@ -169,12 +174,12 @@ public class ChatRoom {
       
        if (sessionDestinataire != null) {
            try {
-        	   SecretKeySpec key = new SecretKeySpec("MaCleChiffrement".getBytes(), "AES");
+        /*	   SecretKeySpec key = new SecretKeySpec("MaCleChiffrement".getBytes(), "AES");
        		Hash hash = new Hash() ;
-       		String messageDechiffre = hash.dechiffrementAES(message, key);
+       		String messageDechiffre = hash.dechiffrementAES(message, key);*/
        	
         	    
-               sessionDestinataire.getBasicRemote().sendText(expediteur + "," + destinataire + "," + "Msg:" + messageDechiffre);
+               sessionDestinataire.getBasicRemote().sendText(expediteur + "," + destinataire + "," + publicKey + "," + "Msg:" + message);
            } catch (Exception exception) {
                System.out.println("ERROR: cannot send message to " + sessionDestinataire.getId());
            }

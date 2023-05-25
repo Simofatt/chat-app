@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="hashedMes"/>
 			<item value="insert"/>
 			<item value="wrapper"/>
 			<item value="navbar"/>
@@ -15,11 +16,6 @@
 			<item value="back"/>
 			<item value="+"/>
 			<item value="button"/>
-			<item value="fab"/>
-			<item value="btnSend"/>
-			<item value="withClientId"/>
-			<item value="discussion"/>
-			<item value="pseudo"/>
 		</list>
 		<list key="replacehistory">
 		</list>

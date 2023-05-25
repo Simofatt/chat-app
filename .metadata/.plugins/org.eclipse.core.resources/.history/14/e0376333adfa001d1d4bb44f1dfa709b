@@ -7,6 +7,7 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="comm.octest.beans.Message" %>
 <jsp:include page="navbar.jsp" />
+<%@ page import="java.security.*" %>
     
       
 
@@ -22,6 +23,9 @@
             String email =  (String) session.getAttribute("email");
             String withClientId = (String) request.getParameter("withClientId");
             Pseudo user = new Pseudo(email);
+
+           
+          
               ArrayList<Message> my_messages = new ArrayList<Message>();
               try {
                   my_messages = (ArrayList<Message>) user.getMessagesWithUser(withClientId);
@@ -38,10 +42,12 @@
            
    <script type="text/javascript">
 
- 
+ let withClientId = "" ;
       window.addEventListener("load", function (event) {
         let pseudo = "<%=email%>";
         let withClientId = "<%=withClientId%>";
+        
+        
         let ws = new WebSocket("ws://localhost:8085/test/chatroom/" + pseudo);
         let txtHistory = document.getElementById("discussion");
         let txtMessage = document.getElementById("txtMessage");
@@ -69,79 +75,95 @@
         })
 
         btnSend.addEventListener("click", function (clickEvent) {
-        	$.ajax({
-        	   url: "HashMessage",
-        	   type: "POST",
-        	   data: {message: txtMessage.value},
-        	   success: function(data) {
-        	      // Receive the treated variable from the servlet or JSP
-        	      hashedMessage = data;
-        	      // Do something with the treated variable
-        	      console.log(hashedMessage);
-        	      let message = {
-        	                to: withClientId,
-        	                from : pseudo,
-        	                message: hashedMessage
-        	            };
-        	      if (fileInput.files.length > 0) {
-                      let file = fileInput.files[0];
-                      let reader = new FileReader();
-                      reader.onload = function (loadEvent) {
-                          let fileData = loadEvent.target.result.split(",")[1];
-                          message.file = {
-                              name: file.name,
-                              type: file.type,
-                              data: fileData
-                          };
-                          ws.send(JSON.stringify(message));
-                      };
-                      reader.readAsDataURL(file);
-                      txtHistory.innerHTML += '<div class="chat outgoing"> <div class="details"> <p>'+ 'Vous avez envoyé un fichier' + '</p></div> </div>';
-                      txtMessage.value = "";
-                      txtMessage.focus();
-                  } else {
-                      ws.send(JSON.stringify(message));
-                      txtHistory.innerHTML += '<div class="chat outgoing"> <div class="details"> <p>'+ txtMessage.value + '</p></div> </div>';
-                      txtMessage.value = "";
-                      txtMessage.focus();
-                  }
-
-        	   }
-        	});
-
+        	console.log("hazhzhzhzhzhhzhz");
+        	 $.ajax({
+                 url: "CryptMessage",
+                 type: "POST",
+                 data: {message: txtMessage.value},
+                 
+                 success: function(data) {
+                	 console.log("data : " + data)
+                     // Receive the treated variable from the servlet or JSP
+                     dataJson = JSON.parse(data);
+                	 console.log("json : " + dataJson);
+                     encryptedMessage = dataJson.encryptedMessage;
+                     publicKey = dataJson.publicKey;
+                     // Do something with the treated variable
+                     console.log(encryptedMessage + " Key : " + publicKey);
+                     let message = {
+                             to: withClientId,
+                             from : pseudo,
+                             message: encryptedMessage,
+                             publicKey: publicKey,
+                            
+                         };
+                   if (fileInput.files.length > 0) {
+                       let file = fileInput.files[0];
+                       let reader = new FileReader();
+                       reader.onload = function (loadEvent) {
+                           let fileData = loadEvent.target.result.split(",")[1];
+                           message.file = {
+                               name: file.name,
+                               type: file.type,
+                               data: fileData
+                           };
+                           ws.send(JSON.stringify(message));
+                       };
+                       reader.readAsDataURL(file);
+                       txtHistory.innerHTML += '<div class="chat outgoing"> <div class="details"> <p>'+ 'Vous avez envoyé un fichier' + '</p></div> </div>';
+                       txtMessage.value = "";
+                       txtMessage.focus();
+                   } else {
+                       ws.send(JSON.stringify(message));
+                       txtHistory.innerHTML += '<div class="chat outgoing"> <div class="details"> <p>'+ txtMessage.value + '</p></div> </div>';
+                       txtMessage.value = "";
+                       txtMessage.focus();
+                   }
+                     	
+                     
+                 }
             
-
-            
-
+             
+             });
+        	
         });
+        
         ws.addEventListener("message", function (evt) {
-            let message_infos = evt.data;
-            let infos_arr = message_infos.split(",");
-            if(infos_arr[0] == withClientId){
-                let msgData = infos_arr[2].split(":");
-                let typeMsg = msgData[0];
-                if (typeMsg == "Msg"){
-                    console.log("Receive new message: " + message_infos);
-                    $.ajax({
-                        url: "UnhashMessage",
-                        type: "POST",
-                        data: {message: msgData, from: withClientId},
-                        success: function(data) {
-                            // Receive the treated variable from the servlet or JSP
-                            unhashedMessage = data;
-                            // Do something with the treated variable
-                            console.log(unhashedMessage);
-                            txtHistory.innerHTML += '<div class="chat incoming"> <div class="details"> <p>'+ unhashedMessage + '</p></div> </div>';
-                        }
-                    });
-                }
-                else if (typeMsg == "File"){
-                    console.log("Receive new message: " + msgData[1]);
-                    let fileInfos = msgData[1].split("|");
-                    txtHistory.innerHTML += '<div class="chat incoming"> <div class="details"> <a href="http://localhost/php/chatApp-ressources//'+fileInfos[0]+'_'+fileInfos[1] + '"> Telecharger Piéce jointe </a></div> </div>';
-                }
+        	 let message_infos = evt.data;
+             let infos_arr = message_infos.split(",");
+             if(infos_arr[0] == withClientId){
+            	 let publicKey = infos_arr[2];
+                 let msgData = infos_arr[3].split(":");
+                 let typeMsg = msgData[0];
+                 if (typeMsg == "Msg"){
+                	 $.ajax({
+                         url: "DecryptMessage",
+                         type: "POST",
+                         data: {message: msgData[1], publicKey: publicKey},
+                         
+                         success: function(data) {
+                        	 console.log("data : " + data)
+                        	 console.log("Receive new message: " + message_infos);
+                             console.log("jkllll" + msgData[1]);
+                             txtHistory.innerHTML += '<div class="chat incoming"> <div class="details"> <p>'+ data + '</p></div> </div>';
+                         }
+                    
+                     
+                     });
+                 	
+                    
+                 }
+                 else if (typeMsg == "File"){
+                     console.log("Receive new message: " + msgData[1]);
+                     let fileInfos = msgData[1].split("|");
+                     txtHistory.innerHTML += '<div class="chat incoming"> <div class="details"> <a href="http://localhost/php/chatApp-ressources//'+fileInfos[0]+'_'+fileInfos[1] + '"> Telecharger Piéce jointe </a></div> </div>';
+                 }
 
-            }
+             }
+             
+        	
+        	
+           
         });
 
       

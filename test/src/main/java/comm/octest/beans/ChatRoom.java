@@ -3,12 +3,16 @@ package comm.octest.beans;
 
 import comm.octest.db.Pseudo;
 import comm.octest.security.Hash;
+import comm.octest.security.SignatureClass;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.StringReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.security.PublicKey;
 import java.util.Hashtable;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -99,6 +103,7 @@ public class ChatRoom {
        String to = json.getString("to");
        String from = json.getString("from");
        String publicKey = json.getString("publicKey");
+       String signature = json.getString("signature") ;
 
        AtomicBoolean isConnected = new AtomicBoolean(false);
        int x =0;
@@ -143,12 +148,22 @@ public class ChatRoom {
                    messages_list.add(new Message(expediteur,to,fullMessage,"file"));
                }
                else {
-            	  /*SecretKeySpec key = new SecretKeySpec("MaCleChiffrement".getBytes(), "AES");
-           		Hash hash = new Hash() ;
-           		byte[] messageChiffre = hash.chiffrementAES(fullMessage, key);*/
-           	// System.out.println(" $$$$$$$$$$$$$ " + messageChiffre);
+           
+            	   SignatureClass signatureClass = new SignatureClass() ;
+            	   byte[] publicKeyBytes = Base64.getDecoder().decode(publicKey);
+                   ByteArrayInputStream byteIn = new ByteArrayInputStream(publicKeyBytes);
+                   ObjectInputStream objectIn = new ObjectInputStream(byteIn);
+                   PublicKey deserializedPublicKey = (PublicKey) objectIn.readObject();
+                   objectIn.close();
+            	   boolean isSignatureValid = signatureClass.verify(fullMessage, signature, deserializedPublicKey); 
+            	   if(isSignatureValid) {
+            	   
                    sendMessage(fullMessage, expediteur, to, publicKey);
                    messages_list.add(new Message(expediteur,to,fullMessage,"text"));
+            	   }else { 
+            		   System.out.println("++++++++++++Signature is not valid++++++++++++++");
+            	   }
+                   
                }
        }
        
