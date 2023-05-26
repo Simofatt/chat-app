@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
+import java.security.PrivateKey;
 import java.util.Base64;
 
 import javax.crypto.Cipher;
@@ -45,7 +46,7 @@ public class CryptMessage extends HttpServlet {
             
             
             SignatureClass signatureClass = new SignatureClass() ;
-           
+            PrivateKey privateKeyForSign = signatureClass.getPrivateKeyFromKeystore();
             
             
             ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
@@ -57,7 +58,7 @@ public class CryptMessage extends HttpServlet {
             String encryptedMessageString = Base64.getEncoder().encodeToString(encryptedMessage);
             
             Gson gson = new Gson();
-            String signature = signatureClass.sign(encryptedMessageString, senderKeyPair.getPrivate());
+            String signature = signatureClass.sign(encryptedMessageString, privateKeyForSign);
             MessageAndKey msgAndKey = new MessageAndKey(encryptedMessageString, publicKeyString,signature);
             String json = gson.toJson(msgAndKey);
             

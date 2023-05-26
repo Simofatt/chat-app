@@ -48,7 +48,7 @@
         let withClientId = "<%=withClientId%>";
         
         
-        let ws = new WebSocket("ws://localhost:8085/test/chatroom/" + pseudo);
+        let ws = new WebSocket("ws://172.20.10.5:8085/test/chatroom/" + pseudo);
         let txtHistory = document.getElementById("discussion");
         let txtMessage = document.getElementById("txtMessage");
         let showInputFile = document.getElementById("showInputFile");
@@ -135,13 +135,14 @@
              let infos_arr = message_infos.split(",");
              if(infos_arr[0] == withClientId){
             	 let publicKey = infos_arr[2];
-                 let msgData = infos_arr[3].split(":");
+            	 let signature = infos_arr[3];
+                 let msgData = infos_arr[4].split(":");
                  let typeMsg = msgData[0];
                  if (typeMsg == "Msg"){
                 	 $.ajax({
                          url: "DecryptMessage",
                          type: "POST",
-                         data: {message: msgData[1], publicKey: publicKey},
+                         data: {message: msgData[1], publicKey: publicKey, signature: signature},
                          
                          success: function(data) {
                         	 console.log("data : " + data)

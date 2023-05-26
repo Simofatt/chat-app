@@ -54,6 +54,7 @@ public class ChatRoom {
    public void open(Session session, @PathParam("pseudo") String pseudo) {
    session.getUserProperties().put( "pseudo", pseudo );
    sessions.put(session.getId(), session);
+   System.out.println("ha houwa dkhal") ;
     }
 
    
@@ -106,6 +107,7 @@ public class ChatRoom {
        String signature = json.getString("signature") ;
 
        AtomicBoolean isConnected = new AtomicBoolean(false);
+       System.out.println(sessions.size());
        int x =0;
        sessions.forEach((key,value) -> {
            if (value.getUserProperties().get("pseudo").equals(to)) {
@@ -149,20 +151,15 @@ public class ChatRoom {
                }
                else {
            
-            	   SignatureClass signatureClass = new SignatureClass() ;
             	   byte[] publicKeyBytes = Base64.getDecoder().decode(publicKey);
                    ByteArrayInputStream byteIn = new ByteArrayInputStream(publicKeyBytes);
                    ObjectInputStream objectIn = new ObjectInputStream(byteIn);
                    PublicKey deserializedPublicKey = (PublicKey) objectIn.readObject();
                    objectIn.close();
-            	   boolean isSignatureValid = signatureClass.verify(fullMessage, signature, deserializedPublicKey); 
-            	   if(isSignatureValid) {
-            	   
-                   sendMessage(fullMessage, expediteur, to, publicKey);
+                 
+            	   sendMessage(fullMessage, expediteur, to, publicKey, signature);
                    messages_list.add(new Message(expediteur,to,fullMessage,"text"));
-            	   }else { 
-            		   System.out.println("++++++++++++Signature is not valid++++++++++++++");
-            	   }
+            	   
                    
                }
        }
@@ -171,7 +168,7 @@ public class ChatRoom {
 
 
 
-   private void sendMessage(String message, String expediteur, String destinataire, String publicKey) {
+   private void sendMessage(String message, String expediteur, String destinataire, String publicKey, String signature) {
        System.out.println(expediteur + " >>> " + message);
      
    
@@ -193,7 +190,7 @@ public class ChatRoom {
        		String messageDechiffre = hash.dechiffrementAES(message, key);*/
        	
         	    
-               sessionDestinataire.getBasicRemote().sendText(expediteur + "," + destinataire + "," + publicKey + "," + "Msg:" + message);
+               sessionDestinataire.getBasicRemote().sendText(expediteur + "," + destinataire + "," + publicKey + "," + signature + "," + "Msg:" + message);
            } catch (Exception exception) {
                System.out.println("ERROR: cannot send message to " + sessionDestinataire.getId());
            }

@@ -19,6 +19,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
 
+import comm.octest.beans.Message;
+
 /**
  * Servlet implementation class DecryptMessage
  */
@@ -51,6 +53,8 @@ public class DecryptMessage extends HttpServlet {
         try {
             String message = request.getParameter("message");
             String publicKey = request.getParameter("publicKey");
+            String signature = request.getParameter("signature");
+
             
             byte[] messageByte = Base64.getDecoder().decode(message);
             byte[] publicKeyBytes = Base64.getDecoder().decode(publicKey);
@@ -63,9 +67,19 @@ public class DecryptMessage extends HttpServlet {
             cipher.init(Cipher.DECRYPT_MODE, deserializedPublicKey);    
             byte[] decryptedMessage = cipher.doFinal(messageByte);
             
-            
-            // String decryptedMessageString = Base64.getEncoder().encodeToString(decryptedMessage);
-            response.getWriter().write(new String(decryptedMessage));
+     	   SignatureClass signatureClass = new SignatureClass() ;
+     	   PublicKey publicKeyForSign = signatureClass.getPublicKeyFromKeystore();
+	   	   boolean isSignatureValid = signatureClass.verify(message, signature, publicKeyForSign); 
+	   	   System.out.println("verification signature");
+	   	   if(isSignatureValid) {
+		   	 System.out.println("Signature validé");
+	   		response.getWriter().write(new String(decryptedMessage));
+	   	   }
+	   	   else {
+			System.out.println("Signature non validé");
+	   		response.getWriter().write("Contenu invisible ! l'application soupconne une tentative de piratage");
+	   	   }
+                        
         } catch (Exception e) {
             e.printStackTrace();
         }

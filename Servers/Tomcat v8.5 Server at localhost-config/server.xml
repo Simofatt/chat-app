@@ -68,6 +68,15 @@
                connectionTimeout="20000"
                redirectPort="8443" />
     -->
+    <Connector port="8086" protocol="org.apache.coyote.http11.Http11NioProtocol"
+           maxThreads="150" SSLEnabled="true">
+    <SSLHostConfig>
+        <Certificate certificateKeystoreFile="../../keystore.jks"
+                     certificateKeystoreType="PKCS12"
+                     certificateKeystorePassword="chatapp"
+                     certificateKeyAlias="mykey"/>
+    </SSLHostConfig>
+</Connector>
     <!-- Define an SSL/TLS HTTP/1.1 Connector on port 8443
          This connector uses the NIO implementation. The default
          SSLImplementation will depend on the presence of the APR/native

@@ -1,6 +1,8 @@
 package comm.octest.security;
 
 import java.security.PrivateKey;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.security.*;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
@@ -27,5 +29,51 @@ public class SignatureClass {
         byte[] signatureBytes = Base64.getDecoder().decode(signature);
         return verifier.verify(signatureBytes);
     }
+    
+    public static PrivateKey getPrivateKeyFromKeystore() {
+    	PrivateKey privateKey = null;
+    	try {
+            // Load the keystore
+            InputStream fis = SignatureClass.class.getResourceAsStream("keystore.jks");
+            KeyStore keystore = KeyStore.getInstance(KeyStore.getDefaultType());
+            keystore.load(fis, "chatapp".toCharArray());
 
+            // Get the private key
+            Key key = keystore.getKey("mykey", "chatapp".toCharArray());
+            if (key instanceof PrivateKey) {
+                privateKey = (PrivateKey) key;
+                System.out.println("Private Key: " + privateKey.toString());
+            }
+
+            fis.close();
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    	
+    	return privateKey;
+    }
+    
+    public static PublicKey getPublicKeyFromKeystore() {
+    	PublicKey publicKey = null;
+    	try {
+            // Load the keystore
+            InputStream fis = SignatureClass.class.getResourceAsStream("keystore.jks");
+            KeyStore keystore = KeyStore.getInstance(KeyStore.getDefaultType());
+            keystore.load(fis, "chatapp".toCharArray());
+            
+            // Get the public key
+            java.security.cert.Certificate cert = keystore.getCertificate("mykey");
+            publicKey = cert.getPublicKey();
+            System.out.println("Public Key: " + publicKey.toString());
+
+
+            fis.close();
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    	
+    	return publicKey;
+    }
 }
