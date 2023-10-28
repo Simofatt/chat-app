@@ -17,7 +17,7 @@
 --><!-- Note:  A "Server" is not itself a "Container", so you may not
      define subcomponents such as "Valves" at this level.
      Documentation at /docs/config/server.html
- --><Server port="8006" shutdown="SHUTDOWN">
+ --><Server port="8005" shutdown="SHUTDOWN">
   <Listener className="org.apache.catalina.startup.VersionLoggerListener"/>
   <!-- Security listener. Documentation at /docs/config/listeners.html
   <Listener className="org.apache.catalina.security.SecurityListener" />
@@ -68,9 +68,13 @@
                connectionTimeout="20000"
                redirectPort="8443" />
     -->
-    <Connector SSLEnabled="true" maxThreads="150" port="8086" protocol="org.apache.coyote.http11.Http11NioProtocol">
+    <Connector port="8086" protocol="org.apache.coyote.http11.Http11NioProtocol"
+           maxThreads="150" SSLEnabled="true">
     <SSLHostConfig>
-        <Certificate certificateKeyAlias="mykey" certificateKeystoreFile="../../keystore.jks" certificateKeystorePassword="chatapp" certificateKeystoreType="PKCS12"/>
+        <Certificate certificateKeystoreFile="../../keystore.jks"
+                     certificateKeystoreType="PKCS12"
+                     certificateKeystorePassword="chatapp"
+                     certificateKeyAlias="mykey"/>
     </SSLHostConfig>
 </Connector>
     <!-- Define an SSL/TLS HTTP/1.1 Connector on port 8443

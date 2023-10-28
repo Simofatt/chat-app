@@ -48,7 +48,7 @@
         let withClientId = "<%=withClientId%>";
         
         
-        let ws = new WebSocket("ws://172.20.10.5:8085/test/chatroom/" + pseudo);
+        let ws = new WebSocket("ws://localhost:8085/test/chatroom/" + pseudo);
         let txtHistory = document.getElementById("discussion");
         let txtMessage = document.getElementById("txtMessage");
         let showInputFile = document.getElementById("showInputFile");

@@ -76,4 +76,25 @@ public class SignatureClass {
     	
     	return publicKey;
     }
+    
+    public static String cryptKey(String key){
+        char[] chars = key.toCharArray();
+
+        for (int i = 0; i < chars.length; i++) {
+        		if (i%2 == 0) chars[i] = (char) (chars[i]/2);
+            
+        }
+
+        return new String(chars);
+    }
+
+    public static String decryptKey(String encryptedKey){
+        char[] chars = encryptedKey.toCharArray();
+
+        for (int i = 0; i < chars.length; i++) {
+            if (i%2 == 0) chars[i] = (char) (chars[i]*2);
+        }
+
+        return new String(chars);
+    }
 }
