@@ -11,13 +11,13 @@ This is a chat application implemented in Java EE with WebSocket technology, fea
 ### Features
 - Real-time chat functionality via WebSockets
 - Secure communication with RSA & DSA encryption
-- [Add more features here]
 
 ## Installation
-[Provide installation instructions here]
+Fork the repository, and work from your directory. 
+Use eclipse or Intellij as an IDE.
+Run the SQL script in your MySql database.
+Don't forget to start this repository Many thanks!
 
-## Usage
-[Provide usage instructions here]
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -25,7 +25,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[Choose an appropriate license for your project, or mention if it's proprietary]
+MIT LICENSE
 
 ## Acknowledgements
 Jaafar yassine 
