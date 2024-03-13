@@ -31,8 +31,8 @@ Follow these steps to set up and run the project:
 5. **Run the Project:**
    Start the Tomcat server, and run the project by selecting one of the servlets. This will deploy your application on the Tomcat server.
 
-6. **Start the Repository:**
-   Ensure the project is started and running properly. This step ensures that all components are functioning correctly.
+6. **Star the Repository:**
+   Ensure to star and fork this repository.
 
 7. **Get in Touch:**
    If you encounter any issues or have questions, feel free to send a message. You can find my social media accounts in my bio.
