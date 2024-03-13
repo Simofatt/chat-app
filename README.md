@@ -12,11 +12,33 @@ This is a chat application implemented in Java EE with WebSocket technology, fea
 - Real-time chat functionality via WebSockets
 - Secure communication with RSA & DSA encryption
 
-## Installation
-Fork the repository, and work from your directory. 
-Use eclipse or Intellij as an IDE.
-Run the SQL script in your MySql database.
-Don't forget to start this repository Many thanks!
+## Installation Guide
+
+Follow these steps to set up and run the project:
+
+1. **Fork the Repository:**
+   Fork the repository to your own GitHub account. This will allow you to work on your own copy of the project.
+
+2. **Set up your Development Environment:**
+   Use Eclipse or IntelliJ IDEA as your Integrated Development Environment (IDE). Both are excellent choices for Java development.
+
+3. **Database Setup:**
+   Execute the provided SQL script in your MySQL database to set up the necessary tables and data.
+
+4. **Install Apache Tomcat:**
+   Download and install Apache Tomcat, and ensure it's added to the directory of your project. Tomcat will serve as the web server for your application.
+
+5. **Run the Project:**
+   Start the Tomcat server, and run the project by selecting one of the servlets. This will deploy your application on the Tomcat server.
+
+6. **Start the Repository:**
+   Ensure the project is started and running properly. This step ensures that all components are functioning correctly.
+
+7. **Get in Touch:**
+   If you encounter any issues or have questions, feel free to send a message. You can find my social media accounts in my bio.
+
+Thank you for choosing this project! Happy coding!
+
 
 
 ## Contributing
@@ -28,6 +50,7 @@ Please make sure to update tests as appropriate.
 MIT LICENSE
 
 ## Acknowledgements
-Jaafar yassine 
+Jaafar yassine.
+Mohamed Alhabib Fatehi.
 
 
